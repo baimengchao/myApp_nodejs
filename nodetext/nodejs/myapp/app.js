@@ -29,12 +29,14 @@ var index = require('./routes/index');
 var canvas = require('./routes/canvas');
 var myWorks = require('./routes/myWorks');
 var about = require('./routes/about');
+var welcome = require('./routes/welcome');
 
 
 app.use('/', index);
 app.use('/canvas', canvas);
 app.use('/myWorks', myWorks);
 app.use('/about', about);
+app.use('/welcome', welcome);
 
 
 // catch 404 and forward to error handler

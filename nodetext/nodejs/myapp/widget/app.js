@@ -30,6 +30,11 @@ define(["lib/jquery.min"], function() {
                     $obj.init();
                 });
                 break;
+            case "welcome":
+                require(["app/welcome"], function($obj) {
+                    $obj.init();
+                });
+                break;
             
         }
     });
